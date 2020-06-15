@@ -1,0 +1,77 @@
+:root {
+	/* Spacing */
+	--base: 8px;
+	--padding: calc(var(--base) * 2);
+
+	/* Colors */
+	--primary: #855cff;
+	--primary-dark: #7752e5;
+	--primary-darker: #6a49cc;
+	--primary-darkest: #5d40b2;
+
+	/* Typography */
+	--font-family:
+		/* Safari for macOS and iOS (San Francisco) */
+		-apple-system,
+		/* Chrome >= 56 for macOS (San Francisco), Windows, Linux adn Android */
+		system-ui,
+		/* Chrome < 56 for macOS (San Francisco) */
+		BlinkMacSystemFont,
+		/* Windows */
+		"Segoe UI",
+		/* Android */
+		"Roboto",
+		/* Basic web fallback */
+		"Helvetica Neue", Arial, sans-serif;
+	--font-size: calc(var(--base) * 2);
+	--font-size-h1: calc(var(--font-size) * 2);
+	--font-size-h2: calc(var(--font-size) * 1.5);
+	--text-color: #333332;
+
+	/* Borders */
+	--border-radius: 4px;
+
+	/* Box shadow */
+	--box-shadow:
+		0 0 2px rgba(0, 0, 0, 0.06),
+		0 2px 2px rgba(0, 0, 0, 0.12);
+	--box-shadow--raised:
+		0 0 6px rgba(0, 0, 0, 0.06),
+		0 6px 6px rgba(0, 0, 0, 0.12);
+
+	/* Animations */
+	--transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+html {
+	touch-action: manipulation;
+}
+
+html, body {
+	height: 100%;
+
+	font-family: var(--font-family);
+
+	background: var(--primary-dark);
+}
+
+.message-box {
+	display: flex;
+	justify-content: center;
+
+	padding: calc(var(--padding) * 4);
+}
+
+.message {
+	font-size: var(--font-size-h2);
+	font-weight: 200;
+
+	color: #f2eeff;
+}

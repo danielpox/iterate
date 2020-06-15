@@ -1,0 +1,44 @@
+.counter {
+	display: flex;
+	align-items: center;
+	float: right;
+
+	height: 32px;
+}
+
+.counter .counter-update {
+	display: inline-block;
+
+	height: calc(var(--padding) * 2);
+
+	padding: 0 var(--padding);
+
+	font-size: var(--font-size);
+
+	color: white;
+	background: var(--primary-dark);
+
+	border: 0;
+	border-radius: var(--border-radius);
+	outline: 0;
+
+	cursor: pointer;
+
+	transition: var(--transition);
+}
+
+.counter .counter-update:hover {
+	background: var(--primary-darker);
+}
+
+.counter .counter-update:focus {
+	background: var(--primary-darker);
+}
+
+.counter .counter-value {
+	display: inline-block;
+
+	padding: var(--padding);
+
+	font-size: var(--font-size-h2);
+}
